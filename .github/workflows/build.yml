@@ -6,7 +6,7 @@ jobs:
   build_skeletyl:
     runs-on: ubuntu-latest
     container:
-      image: zmkfirmware/zmk-dev-arm:2.5
+      image: zmkfirmware/zmk-build-arm:stable
     name: Build Skeletyl
     steps:
       - name: Checkout
@@ -33,11 +33,6 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: Patch Zephyr OLED
-        working-directory: ./zephyr
-        run: |
-          wget https://github.com/zmkfirmware/zmk/files/8009722/zephyr_oled_i2c_fix_full_init.diff.txt
-          git apply zephyr_oled_i2c_fix_full_init.diff.txt
       - name: West Build (Skeletyl Left)
         run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=tbkmini_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Skeletyl Left Kconfig file

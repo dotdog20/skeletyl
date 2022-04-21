@@ -6,3 +6,6 @@ config SHIELD_TBKMINI_LEFT
 
 config SHIELD_TBKMINI_RIGHT
     def_bool $(shields_list_contains,tbkmini_right)
+
+config SHIELD_NANO_OLED
+	def_bool $(shields_list_contains,nano_oled)

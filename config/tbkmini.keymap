@@ -59,17 +59,17 @@
 
         default_layer {
             bindings = <
-	&kp DQT    &kp COMMA    &kp DOT        &kp P       &kp Y          &kp F  &kp G        &kp C        &kp R       &kp L
+	&kp SQT    &kp COMMA    &kp DOT        &kp P       &kp Y          &kp F  &kp G        &kp C        &kp R       &kp L
 	&hm LGUI A &hm LALT O   &hm LCTRL E    &hm LSHFT U &kp I          &kp D  &hm RSHFT H  &hm RCTRL T  &hm LALT N  &hm RGUI S 
 	&kp SEMI   &kp Q        &kp J          &kp K       &kp X          &kp B  &kp M        &kp W        &kp V       &kp Z   
-	           &lt MSE ESC  &lt NAV SPACE  &lt MED TAB                       &lt FUN RET  &lt NUM RET &lt SYM DEL
-            >;
+	           &lt MSE ESC  &lt NAV SPACE  &lt MED TAB                       &lt FUN BSPC &tog GAME    &lt SYM RET
+            >;h
         };
         game_layer {
             bindings = <
-	&kp Q        &kp W      &kp F       &kp P       &kp B          &kp J &kp L       &kp U       &kp Y      &kp SQT
-	&mt LSHIFT A &kp R      &kp S       &kp T       &kp G          &kp M &kp N       &kp E       &kp I      &kp O
-	&mt LCTRL Z  &kp X      &kp C       &kp D       &kp V          &kp K &kp H       &kp COMMA   &kp DOT    &kp FSLH
+	&kp 1        &kp 2      &kp 3       &kp 4       &kp 5          &kp J &kp L       &kp U       &kp Y      &kp SQT
+	&kp Q        &kp W      &kp E       &kp R       &kp T          &kp M &kp N       &kp E       &kp I      &kp O
+	&mt LCTRL Z  &kp X      &kp C       &kp D       &kp F          &kp K &kp H       &kp COMMA   &kp DOT    &kp FSLH
 	           &lt NUM ESC  &kp SPACE   &hm LALT TAB        &lt FUN RET  &lt NUM BSPC  &lt SYM DEL
             >;
         };

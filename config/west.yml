@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware-infused-kim
-      revision: latest
+      revision: my-changes/oled-ext-pwr
       import: app/west.yml
   self:
     path: config

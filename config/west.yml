@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware-infused-kim
       url-base: https://github.com/infused-kim
+    - name: zephyr-dododo
+      url-base: https://github.com/bobobo1618
   projects:
     - name: zmk
-      remote: zmkfirmware-infused-kim
-      revision: my-changes/oled-ext-pwr
+      remote: zephyr-dododo #zmkfirmware-infused-kim
+      revision: fix-oled #my-changes/oled-ext-pwr
       import: app/west.yml
   self:
     path: config
